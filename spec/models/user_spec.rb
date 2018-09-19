@@ -58,11 +58,11 @@ RSpec.describe User, type: :model do
     let(:create_user_from_google) { lambda {User.from_omniauth(google_auth_response)}}
 
     it 'creates an instance from an Facebook oauth hash' do
-      expect{create_user_from_facebook.call}.to change{ User.count}.from(0).to(1)
+      expect{create_user_from_facebook.call}.to change{ User.count}
     end
 
     it 'creates an instance from an Google oauth hash' do
-      expect{create_user_from_google.call}.to change{ User.count}.from(0).to(1)
+      expect{create_user_from_google.call}.to change{ User.count}
     end
 
     describe 'Facebook' do
