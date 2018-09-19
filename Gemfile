@@ -23,6 +23,7 @@ gem 'social-share-button'
 gem 'stripe-rails'
 gem 'acts_as_shopping_cart', '~> 0.4.1'
 gem 'aws-sdk-s3', '~> 1.0.0.rc2'
+gem 'acts_as_follower', github: 'tcocca/acts_as_follower', branch: 'master'
 
 group :development, :test do
   gem 'chromedriver-helper'
