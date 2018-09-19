@@ -6,6 +6,8 @@ class Performer < ApplicationRecord
     has_one_attached :profile_image
     has_one_attached :background_image
 
+    acts_as_followable
+
     state_machine :state, initial: :active do 
         event :archive do
             transition active: :archived
