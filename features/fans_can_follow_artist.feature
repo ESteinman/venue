@@ -1,3 +1,4 @@
+@javascript
 Feature: Fans can follow artists
     As a Fan
     In order to stay updated about Artists
@@ -12,7 +13,6 @@ Feature: Fans can follow artists
         Given the following Performer exist
             | name       |
             | Kanye West |
-
         And I am logged in as 'users@artist.se'
 
     Scenario:
