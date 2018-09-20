@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   resources :tickets, only: [:create]
   resources :orders, only: [:create]
   resources :payments, only: [:new, :create]
+  resources :follow, only: [:create], method: :get
   post '/charges', controller: :purchases, action: :create
 end
