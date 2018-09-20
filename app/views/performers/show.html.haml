@@ -10,9 +10,8 @@
             - @performer.genres.map {|genre| genre.name}.each do |genre|
               %span= genre.humanize
           .follow-request
-            %a{href: "#"}> + Follow
-              |
-            %a{href: "#"} + Request this artist
+            = form_tag follow_path(user_id: user.id), method: :post, remote: true do
+              = button_tag 'Follow'
   #artist-details
     .mui-container
       .mui-row
