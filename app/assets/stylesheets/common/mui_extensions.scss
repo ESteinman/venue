@@ -115,3 +115,18 @@
   margin-left: 160px;
   margin-right: 160px;
 }
+.mui-textfield {
+  .mui-textfield > textarea {
+    box-sizing: border-box;
+    display: block;
+    background-color: $mui-input-bg-color;
+    color: #FFFF;
+    border: none;
+    border-bottom: 1px solid $mui-input-border-color;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}
