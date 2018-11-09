@@ -10,5 +10,6 @@ FactoryBot.define do
       campaign.performers << create(:performer)
     end
     event_date { '2019-05-05' }
+    eventbrite { 'MyString' }
   end
 end
