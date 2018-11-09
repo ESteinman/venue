@@ -14,7 +14,6 @@ Feature: As an Artist
         And I am on the 'landing' page
 
     Scenario:
-        Then stop
         When I click on 'New Campaign'
         And I fill in 'Title' with 'Clare Cunningham'
         And I select 'Clare Cunningham' as performer
@@ -24,3 +23,4 @@ Feature: As an Artist
         And I fill in 'Eventbrite-link' with 'https://www.eventbrite.com/e/breakthrough-music-business-summit-stockholm-tickets-27266256106?aff=ebdssbcitybrowse'
         And I attach an image to the campaign
         And I click on 'Launch Campaign'
+        
