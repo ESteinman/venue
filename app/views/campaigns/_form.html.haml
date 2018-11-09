@@ -22,11 +22,16 @@
           = form.label :description
         .mui-textfield.mui-textfield--float-label
           = form.text_field :location
-          = form.label :location   
+          = form.label :location
         .mui-row
           .mui-col-md-6
             .mui-textfield.mui-textfield--float-label
               = form.date_field :event_date
+        .mui-row
+          .mui-col-md-6
+            .mui-textfield.mui-textfield--float-label
+              = form.text_field :eventbrite
+              = form.label :eventbrite, "Eventbrite-link"
           .mui-col-lg-6
             .mui-textfield#genre
               = form.label :genre 
