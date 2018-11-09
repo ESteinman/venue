@@ -55,7 +55,7 @@ class CampaignsController < ApplicationController
   private
 
   def campaign_params
-    params.require(:campaign).permit(:title, :description, :location, :image, :state, :event_date, genre_ids: [], performer_ids: [])
+    params.require(:campaign).permit(:title, :description, :location, :image, :state, :eventbrite, :event_date, genre_ids: [], performer_ids: [])
   end
 
   def ticket_params
