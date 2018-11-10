@@ -24,12 +24,12 @@ Feature: Add sold ticket counter to Campaign page
         And I am on the 'landing' page
 
     Scenario: Buy 1 ticket
-        When I click on 'Veronica Maggio in Stockholm' detail box
-        Then I should see '0/83'
-        And I click on 'Buy your ticket' for "Gig Starter"
-        And I should see "1 ticket" in header
-        Then I click on '1 ticket' in header
-        And I should see '1 ticket to Veronica Maggio in Stockholm'
+        #When I click on 'Veronica Maggio in Stockholm' detail box
+        #Then I should see '0/83'
+        #And I click on 'Buy your ticket' for "Gig Starter"
+        #And I should see "1 ticket" in header
+        #Then I click on '1 ticket' in header
+        #And I should see '1 ticket to Veronica Maggio in Stockholm'
         # Then I fill in the stripe form
         # And I wait 2 seconds
         # And I click on 'Submit Payment'
@@ -38,11 +38,11 @@ Feature: Add sold ticket counter to Campaign page
         # And I should see '1/83'
 
     Scenario: Buy 3 tickets
-        When I click on 'Veronica Maggio in Stockholm' detail box
-        Then I should see '0/83'
-        And I click on 'Buy your ticket' for "Gig Starter" 3 times
-        Then I click on '3 ticket' in header
-        And I should see '3 tickets to Veronica Maggio in Stockholm'
+        #When I click on 'Veronica Maggio in Stockholm' detail box
+        #Then I should see '0/83'
+        #And I click on 'Buy your ticket' for "Gig Starter" 3 times
+        #Then I click on '3 ticket' in header
+        #And I should see '3 tickets to Veronica Maggio in Stockholm'
         # Then I fill in the stripe form
         # And I wait 2 seconds
         # And I click on 'Submit Payment'
